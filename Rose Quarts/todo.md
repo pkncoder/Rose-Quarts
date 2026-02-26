@@ -32,3 +32,4 @@ Having a platform where you are confortable to use, and express yourself in a cl
 - [ ] Extra links / numbers to other resourses
 - [ ] Update to newest IOS version (current planned of 18.2)
 - [ ] Multi users
+- [ ] Calander mood tracking
