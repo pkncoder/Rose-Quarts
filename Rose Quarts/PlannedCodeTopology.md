@@ -94,7 +94,7 @@ Phase 5 – Accounts
 - Profile screen
 - Multi-user support (was Chat-GPT's idea, but not bad idea)
 
-Phase 6 – Export + Resources
+Phase 6 – Export + Resources (Post-First-Goal)
 - Export feature
 - Mental health resource links
 - Emergency quick-access numbers
