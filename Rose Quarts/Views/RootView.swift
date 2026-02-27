@@ -11,9 +11,8 @@ struct RootView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Hello, World!")
+                EntryFeedView()
             }
-            .padding()
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
@@ -27,7 +26,6 @@ struct RootView: View {
                 
             }
         }
-        
     }
 }
 

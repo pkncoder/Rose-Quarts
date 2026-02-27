@@ -8,5 +8,5 @@
 import Foundation
 
 public class AppState: ObservableObject {
-    
+    @Published var entries: [Entry] = []
 }

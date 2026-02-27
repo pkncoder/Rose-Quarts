@@ -2,7 +2,7 @@
 
 This is how each view/file moves to each other.
 
-This was started once I started the programming.
+This was started once I started the programming, and is updated for the newest / actual
 
 ## Topology
 
@@ -10,6 +10,9 @@ This was started once I started the programming.
   - RootView.swift
 
     - CreateNewEntryView.swift
+      - AppState.swift
       - CreateNewEntryViewModel.swift
 
     - EntryView.swift
+      - AppState.swift
+      - EntryFeedView.swift

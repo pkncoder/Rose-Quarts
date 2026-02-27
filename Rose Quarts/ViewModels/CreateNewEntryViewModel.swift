@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 @Observable
 public class CreateNewEntryViewModel {
@@ -16,5 +17,7 @@ public class CreateNewEntryViewModel {
     public func onCreateButtonPress() {
         print(entryTitle)
         print(entryDescription)
+        
+        
     }
 }
