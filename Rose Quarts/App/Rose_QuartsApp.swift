@@ -10,13 +10,12 @@ import SwiftData
 
 @main
 struct RoseQuarts: App {
-    @StateObject var appState = AppState()
+    @Environment(\.modelContext) private var modelContext
 
     var body: some Scene {
         WindowGroup {
             RootView()
-                .environmentObject(appState)
         }
+        .modelContainer(for: SwiftDataDiaryEntry.self)
     }
 }
-

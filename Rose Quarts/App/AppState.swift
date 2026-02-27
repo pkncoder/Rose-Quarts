@@ -6,7 +6,13 @@
 //
 
 import Foundation
+import SwiftData
 
+@MainActor
 public class AppState: ObservableObject {
-    @Published var entries: [Entry] = []
+    public var swiftDataDiaryRepository: SwiftDataDiaryRepository
+    
+    init(modelContext: ModelContext) {
+        self.swiftDataDiaryRepository = SwiftDataDiaryRepository(modelContext: modelContext)
+    }
 }

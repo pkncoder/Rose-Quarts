@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct TextBlock {
-    var id: UUID = UUID()
+public struct TextBlock: Codable {
+    public var id: UUID = UUID()
     
-    var title: String
-    var content: String
+    public var title: String
+    public var content: String
 }

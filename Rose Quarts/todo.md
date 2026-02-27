@@ -33,3 +33,14 @@ Having a platform where you are confortable to use, and express yourself in a cl
 - [ ] Update to newest IOS version (current planned of 18.2)
 - [ ] Multi users
 - [ ] Calander mood tracking
+- [ ] Cache Entries every once and awhile
+
+## Todos
+
+- [ ] Add a modified date attribute
+- [ ] Have CreateNewDiaryViewModel own SwiftDataDiaryRepository*
+
+## Ideas
+
+- [ ] Have a system where a user could share to a "Therapist" or someone of that status.
+  - [ ] This could also have an "Ideas" entry (think like shower thoughts, but other things that come to mind)

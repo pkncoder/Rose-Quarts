@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct CreateNewEntryView: View {
+struct CreateNewDiaryEntryView: View {
     
-    @State private var createNewEntryViewModel = CreateNewEntryViewModel()
     @EnvironmentObject var appState: AppState
+    @State private var createNewEntryViewModel = CreateNewDiaryEntryViewModel()
     
     var body: some View {
         VStack {
@@ -20,7 +20,10 @@ struct CreateNewEntryView: View {
                 TextField("Entry Description", text: $createNewEntryViewModel.entryDescription)
                 
                 Button {
-                    appState.entries.append(Entry(contentBlock: EntryContentBlock.text(TextBlock(title: createNewEntryViewModel.entryTitle, content: createNewEntryViewModel.entryDescription))))
+                    Task {
+                        await createNewEntryViewModel.createNewEntry(swiftDataDiaryRepository: appState.swiftDataDiaryRepository)
+                        print("Done View")
+                    }
                 } label: {
                     Text("Create")
                 }

@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct RootView: View {
+    
+    @Environment(\.modelContext) private var modelContext
+    
     var body: some View {
         NavigationStack {
             VStack {
-                EntryFeedView()
+                DiaryEntryFeedView()
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
-                        CreateNewEntryView()
+                        CreateNewDiaryEntryView()
                             .navigationTitle("Create New Entry")
                     } label: {
                         Image(systemName: "plus")
@@ -26,9 +30,8 @@ struct RootView: View {
                 
             }
         }
+        .environmentObject(
+            AppState(modelContext: modelContext)
+        )
     }
-}
-
-#Preview {
-    RootView()
 }
